@@ -208,6 +208,11 @@ body {
   cursor: pointer;
 }
 
+.template-slide__actions__remove .icon {
+  width: 19px;
+  height: 20px;
+}
+
 .template-slide__actions__request {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,11 +263,13 @@ body {
   background: #ee2a7b;
 }
 
-.template-slide__arrow:hover svg {
+.template-slide__arrow:hover .icon {
   stroke: white;
 }
 
-.template-slide__arrow svg {
+.template-slide__arrow .icon {
+  width: 14px;
+  height: 24px;
   stroke: #ee2a7b;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -272,7 +279,7 @@ body {
   left: -30px;
 }
 
-.template-slide__arrow.template-slider--prev svg {
+.template-slide__arrow.template-slider--prev .icon {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }

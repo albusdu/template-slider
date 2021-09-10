@@ -176,6 +176,10 @@ body {
       border: 1px solid #b1b7ca;
       border-radius: 8px;
       cursor: pointer;
+      .icon {
+        width: 19px;
+        height: 20px;
+      }
     }
     &__request {
       display: flex;
@@ -208,17 +212,19 @@ body {
     cursor: pointer;
     &:hover {
       background: #ee2a7b;
-      svg {
+      .icon {
         stroke: white;
       }
     }
-    svg {
+    .icon {
+      width: 14px;
+      height: 24px;
       stroke: #ee2a7b;
       transition: 0.3s ease-in-out;
     }
     &.template-slider--prev {
       left: -30px;
-      svg {
+      .icon {
         transform: rotate(-180deg);
       }
     }
