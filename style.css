@@ -215,18 +215,22 @@ body {
 
 .template-slider__empty .text-block {
   text-align: center;
-  font-size: 18px;
-  line-height: 30px;
   margin-top: 24px;
 }
 
 .template-slider__empty .text-block__title {
   color: #292562;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: NotoSemiBold;
 }
 
 .template-slider__empty .text-block__text {
   color: #9199b4;
   padding: 0 15%;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: NotoSemiBold;
 }
 
 .template-slide {
@@ -482,6 +486,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #292562;
+  margin-right: 40px;
 }
 
 .template-request__text a {
@@ -497,5 +502,6 @@ body {
   text-decoration: none;
   color: white;
   white-space: nowrap;
+  font-family: NotoSemiBold;
 }
 /*# sourceMappingURL=style.css.map */

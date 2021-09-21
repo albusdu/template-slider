@@ -168,15 +168,19 @@ body {
     }
     .text-block {
       text-align: center;
-      font-size: 18px;
-      line-height: 30px;
       margin-top: 24px;
       &__title {
         color: #292562;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: $notoSemiBold;
       }
       &__text {
         color: #9199b4;
         padding: 0 15%;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: $notoSemiBold;
       }
     }
   }
@@ -370,6 +374,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #292562;
+    margin-right: 40px;
     a {
       color: #ee2a7b;
       text-decoration: none;
@@ -383,5 +388,6 @@ body {
     text-decoration: none;
     color: white;
     white-space: nowrap;
+    font-family: $notoSemiBold;
   }
 }
