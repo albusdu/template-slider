@@ -383,6 +383,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-family: NotoSemiBold, sans-serif;
+  font-size: 15px;
 }
 
 .template-slide__arrow {
@@ -486,7 +487,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #292562;
-  margin-right: 40px;
+  margin-right: 130px;
 }
 
 .template-request__text a {
