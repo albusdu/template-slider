@@ -32,6 +32,9 @@ $notoSemiBold: NotoSemiBold;
 body {
   margin-top: 150px;
   background: #ebf7ff;
+  @media (max-width: 1080px) {
+    margin-top: 75px;
+  }
 }
 .template-slider__modal {
   position: fixed;
@@ -116,6 +119,13 @@ body {
   margin: 0 auto;
   position: relative;
   box-shadow: 0px 10px 30px #0099ff0d;
+  @media (max-width: 1580px) {
+    padding: 24px 0 56px 24px;
+  }
+  @media (max-width: 1080px) {
+    width: 100%;
+    padding: 16px 0 48px 16px;
+  }
 }
 .template-slider {
   width: 100%;
@@ -129,6 +139,16 @@ body {
     position: relative;
     padding-bottom: 12px;
     margin-bottom: 33px;
+    @media (max-width: 1580px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @media (max-width: 1080px) {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 23px;
+      padding-bottom: 6px;
+    }
     &:after {
       content: "";
       width: 52px;
@@ -138,6 +158,12 @@ body {
       bottom: 0;
       left: 0;
       border-radius: 6px;
+      @media (max-width: 1580px) {
+        width: 40px;
+      }
+      @media (max-width: 1080px) {
+        width: 36px;
+      }
     }
   }
   .right-overlay {
@@ -154,6 +180,12 @@ body {
         rgba(255, 255, 255, 1) 100%
       )
       0% 0% no-repeat padding-box;
+    @media (max-width: 1580px) {
+      width: 90px;
+    }
+    @media (max-width: 1080px) {
+      display: none;
+    }
   }
   &__empty {
     display: flex;
@@ -162,6 +194,10 @@ body {
     .icon {
       width: 66px;
       height: 66px;
+      @media (max-width: 1080px) {
+        width: 45px;
+        height: 45px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -170,11 +206,28 @@ body {
     .text-block {
       text-align: center;
       margin-top: 24px;
+      @media (max-width: 1580px) {
+        margin-top: 20px;
+      }
+      @media (max-width: 1080px) {
+        margin-top: 16px;
+      }
       &__title {
         color: #292562;
         font-size: 18px;
         line-height: 30px;
         font-family: $notoSemiBold;
+        margin-bottom: 12px;
+        @media (max-width: 1580px) {
+          font-size: 16px;
+          line-height: 26px;
+          margin-bottom: 8px;
+        }
+        @media (max-width: 1080px) {
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 6px;
+        }
       }
       &__text {
         color: #9199b4;
@@ -182,6 +235,14 @@ body {
         font-size: 18px;
         line-height: 30px;
         font-family: $notoSemiBold;
+        @media (max-width: 1580px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        @media (max-width: 1080px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }
@@ -196,6 +257,16 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 8px 15px rgba(41, 37, 98, 0.05);
+  @media (max-width: 1580px) {
+    width: 340px;
+    height: 375px;
+    margin-right: 20px;
+  }
+  @media (max-width: 1080px) {
+    margin-right: 16px;
+    width: 312px;
+    height: 345px;
+  }
   &__header {
     padding: 20px 24px;
     border-top-left-radius: 8px;
@@ -203,13 +274,26 @@ body {
     background: rgba(45, 46, 224, 0.03);
     display: flex;
     align-items: center;
+    @media (max-width: 1080px) {
+      padding: 16px;
+    }
     .icon {
       margin-right: 12px;
+      @media (max-width: 1580px) {
+        margin-right: 9px;
+      }
+      @media (max-width: 1080px) {
+        margin-right: 7px;
+      }
     }
     .wrap {
       font-size: 16px;
       line-height: 22px;
       color: #292562;
+      @media (max-width: 1580px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
     &__title {
       font-family: NotoBold, sans-serif;
@@ -227,6 +311,13 @@ body {
     flex: 1 0 0;
     overflow: auto;
     font-family: NotoMedium, sans-serif;
+    @media (max-width: 1580px) {
+      font-size: 14px;
+      padding: 16px;
+    }
+    @media (max-width: 1080px) {
+      padding: 12px 16px 0;
+    }
     &__name {
       margin-bottom: 2px;
     }
@@ -238,6 +329,10 @@ body {
       margin-top: 20px;
       position: relative;
       padding-bottom: 10px;
+      @media (max-width: 1580px) {
+        margin-top: 12px;
+        padding-bottom: 10px;
+      }
       &:after {
         content: "";
         background: transparent
@@ -277,6 +372,12 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 32px 32px;
+    @media (max-width: 1580px) {
+      padding: 0 24px 24px;
+    }
+    @media (max-width: 1080px) {
+      padding: 0 16px 16px;
+    }
     &__remove {
       width: 45px;
       height: 40px;
@@ -285,9 +386,16 @@ body {
       border: 1px solid #b1b7ca;
       border-radius: 8px;
       cursor: pointer;
+      @media (max-width: 1080px) {
+        width: 44px;
+      }
       .icon {
         width: 19px;
         height: 20px;
+        @media (max-width: 1580px) {
+          width: 17px;
+          height: 19px;
+        }
       }
     }
     &__request {
@@ -303,6 +411,13 @@ body {
       cursor: pointer;
       font-family: NotoSemiBold, sans-serif;
       font-size: 15px;
+      @media (max-width: 1580px) {
+        width: 230px;
+      }
+      @media (max-width: 1080px) {
+        font-size: 14px;
+        width: 220px;
+      }
     }
   }
   &__arrow {
@@ -320,6 +435,9 @@ body {
     justify-content: center;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    @media (max-width: 1080px) {
+      display: none;
+    }
     &:hover {
       background: #ee2a7b;
       .icon {
@@ -356,6 +474,9 @@ body {
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 32px;
+  @media (max-width: 1080px) {
+    bottom: 24px;
+  }
 }
 
 .template-request {
@@ -368,8 +489,18 @@ body {
   border-radius: 8px;
   width: 77%;
   margin: 38px auto 0;
+  @media (max-width: 1080px) {
+    padding: 24px 16px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .icon {
     margin-right: 45px;
+    @media (max-width: 992px) {
+      margin: 0 0 20px 0;
+    }
   }
   &__text {
     font-family: $notoSemiBold;
@@ -377,6 +508,16 @@ body {
     line-height: 30px;
     color: #292562;
     margin-right: 130px;
+    @media (max-width: 1080px) {
+      font-size: 14px;
+      line-height: 22px;
+      margin-right: 0;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
     a {
       color: #ee2a7b;
       text-decoration: none;
@@ -391,5 +532,8 @@ body {
     color: white;
     white-space: nowrap;
     font-family: $notoSemiBold;
+    @media (max-width: 1080px) {
+      padding: 11px 41px;
+    }
   }
 }
