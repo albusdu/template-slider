@@ -701,6 +701,12 @@ body {
   margin: 38px auto 0;
 }
 
+@media (max-width: 1580px) {
+  .template-request {
+    padding: 30px;
+  }
+}
+
 @media (max-width: 1080px) {
   .template-request {
     padding: 24px 16px;
@@ -719,10 +725,16 @@ body {
 }
 
 .template-request .icon {
-  margin-right: 45px;
+  margin: 0 45px 0 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1580px) {
+  .template-request .icon {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 1080px) {
   .template-request .icon {
     margin: 0 0 20px 0;
   }
@@ -734,6 +746,14 @@ body {
   line-height: 30px;
   color: #292562;
   margin-right: 130px;
+}
+
+@media (max-width: 1580px) {
+  .template-request__text {
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 1080px) {
