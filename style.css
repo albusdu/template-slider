@@ -41,12 +41,6 @@ body {
   }
 }
 
-@media (max-width: 1080px) {
-  .wrapper {
-    padding: 0 16px;
-  }
-}
-
 .template-slider__modal {
   position: fixed;
   width: 100%;
