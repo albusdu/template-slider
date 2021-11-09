@@ -36,6 +36,11 @@ body {
     margin-top: 75px;
   }
 }
+.wrapper {
+  @media (max-width: 1080px) {
+    padding: 0 16px;
+  }
+}
 .template-slider__modal {
   position: fixed;
   width: 100%;
@@ -116,9 +121,9 @@ body {
   background: white;
   border-radius: 8px;
   padding: 32px 0 72px 32px;
-  margin: 0 auto;
   position: relative;
   box-shadow: 0px 10px 30px #0099ff0d;
+  margin: 0 auto;
   @media (max-width: 1580px) {
     padding: 24px 0 56px 24px;
   }
@@ -126,10 +131,23 @@ body {
     width: 100%;
     padding: 16px 0 48px 16px;
   }
+  &#noneed {
+    margin-top: 38px;
+    margin-bottom: 50px;
+    @media (max-width: 1180px) {
+      margin-top: 24px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 12px;
+    }
+  }
 }
 .template-slider {
   width: 100%;
   padding-bottom: 15px;
+  @media (max-width: 1080px) {
+    padding-bottom: 0;
+  }
   &__title {
     font-family: NotoBold, sans-serif;
     font-weight: bold;
@@ -242,6 +260,10 @@ body {
         @media (max-width: 1080px) {
           font-size: 14px;
           line-height: 20px;
+          padding: 0 10%;
+        }
+        @media (max-width: 768px) {
+          padding: 0 16px;
         }
       }
     }
@@ -257,6 +279,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 8px 15px rgba(41, 37, 98, 0.05);
+  position: relative;
   @media (max-width: 1580px) {
     width: 340px;
     height: 375px;
@@ -266,6 +289,29 @@ body {
     margin-right: 16px;
     width: 312px;
     height: 345px;
+  }
+  &:after {
+    content: "";
+    background: transparent
+      linear-gradient(
+        180deg,
+        #ffffff00 0%,
+        #ffffffaf 51%,
+        #fffffff8 81%,
+        #ffffff 100%
+      )
+      0% 0% no-repeat padding-box;
+    height: 86px;
+    width: 100%;
+    position: absolute;
+    bottom: 72px;
+    left: 0;
+    @media (max-width: 1580px) {
+      bottom: 64px;
+    }
+    @media (max-width: 1080px) {
+      bottom: 46px;
+    }
   }
   &__header {
     padding: 20px 24px;
@@ -328,27 +374,10 @@ body {
       list-style: none;
       margin-top: 20px;
       position: relative;
-      padding-bottom: 10px;
+      padding-bottom: 70px;
       @media (max-width: 1580px) {
         margin-top: 12px;
         padding-bottom: 10px;
-      }
-      &:after {
-        content: "";
-        background: transparent
-          linear-gradient(
-            180deg,
-            #ffffff00 0%,
-            #ffffffaf 51%,
-            #fffffff8 81%,
-            #ffffff 100%
-          )
-          0% 0% no-repeat padding-box;
-        height: 86px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
       }
       .list-item {
         position: relative;
@@ -493,11 +522,15 @@ body {
     padding: 30px;
   }
   @media (max-width: 1080px) {
+    margin: 24px auto 0;
     padding: 24px 16px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media (max-width: 768px) {
+    margin: 12px auto 0;
   }
   .icon {
     margin: 0 45px 0 0;
