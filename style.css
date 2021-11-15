@@ -428,7 +428,7 @@ body {
 
 @media (max-width: 1080px) {
   .template-slide:after {
-    bottom: 46px;
+    bottom: 56px;
   }
 }
 
@@ -532,7 +532,6 @@ body {
 @media (max-width: 1580px) {
   .template-slide__content__list {
     margin-top: 12px;
-    padding-bottom: 10px;
   }
 }
 

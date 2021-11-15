@@ -305,7 +305,7 @@ body {
       bottom: 64px;
     }
     @media (max-width: 1080px) {
-      bottom: 46px;
+      bottom: 56px;
     }
   }
   &__header {
@@ -372,7 +372,7 @@ body {
       padding-bottom: 70px;
       @media (max-width: 1580px) {
         margin-top: 12px;
-        padding-bottom: 10px;
+        // padding-bottom: 10px;
       }
       .list-item {
         position: relative;
