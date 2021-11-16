@@ -63,6 +63,9 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    @media (max-width: 1080px) {
+      width: 296px;
+    }
   }
   &__close {
     background: #9199b4;
@@ -80,16 +83,35 @@ body {
       width: 20px;
       height: 20px;
     }
+    @media (max-width: 1080px) {
+      width: 30px;
+      height: 30px;
+      top: 16px;
+      right: 16px;
+    }
   }
   &__title {
     margin: 64px 0 0;
     font-size: 18px;
     line-height: 26px;
     color: #0e215e;
+    @media (max-width: 1080px) {
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+    }
   }
   &__actions {
     margin: 48px 0 64px;
     display: flex;
+    @media (max-width: 1080px) {
+      margin: 32px 0;
+      width: 100%;
+      padding: 0 20px;
+      justify-content: space-between;
+    }
   }
   &__btn {
     width: 168px;
@@ -97,13 +119,21 @@ body {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    font-family: $notoSemiBold;
+    font-family: $notoSemiBold, sans-serif;
     font-size: 16px;
+    @media (max-width: 1080px) {
+      font-size: 14px;
+      height: 40px;
+      width: calc(50% - 8px);
+    }
     &--yes {
       background: transparent;
       box-shadow: 0px 10px 20px #0099ff1a;
       border: 1px solid #b1b7ca;
       margin-right: 40px;
+      @media (max-width: 1080px) {
+        margin-right: 0;
+      }
     }
     &--no {
       background: #ee2a7b;
@@ -354,6 +384,9 @@ body {
     font-family: NotoMedium, sans-serif;
     &::-webkit-scrollbar {
       width: 4px;
+    }
+    &.hidden::-webkit-scrollbar {
+      width: 0;
     }
     &::-webkit-scrollbar-thumb {
       background: #9199b4;
