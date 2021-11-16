@@ -352,6 +352,15 @@ body {
     flex: 1 0 0;
     overflow: auto;
     font-family: NotoMedium, sans-serif;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #9199b4;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #606577;
+    }
     @media (max-width: 1580px) {
       font-size: 14px;
       padding: 16px;

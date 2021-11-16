@@ -501,6 +501,18 @@ body {
   font-family: NotoMedium, sans-serif;
 }
 
+.template-slide__content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.template-slide__content::-webkit-scrollbar-thumb {
+  background: #9199b4;
+}
+
+.template-slide__content::-webkit-scrollbar-thumb:hover {
+  background: #606577;
+}
+
 @media (max-width: 1580px) {
   .template-slide__content {
     font-size: 14px;
